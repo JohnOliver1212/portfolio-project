@@ -25,6 +25,9 @@ import ShowcaseImg from '../assets/showcase-img.png';
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 
 const Showcase = () => {
+    const handleIconClick = (url) => {
+        window.open(url, '_blank'); 
+    };
     return (
         <PaddingContainer
             id="Home"
@@ -54,16 +57,16 @@ const Showcase = () => {
                     <Heading as="h3" size="h3">I'm a <BlueText>Web Developer</BlueText></Heading>
                     <ParaText as="p" top="2rem" bottom="4rem">And I am passionate about web development, creating innovative solutions that elevate user experiences and drive impactful results.</ParaText>
                     <FlexContainer gap="20px" responsiveFlex>
-                        <IconContainer color="blue" size="1.5rem">
+                        <IconContainer color="blue" size="1.5rem" onClick={() => handleIconClick('https://www.facebook.com/Martillosjohn')}>
                             <BsFacebook />
                         </IconContainer>
-                        <IconContainer color="blue" size="1.5rem">
+                        <IconContainer color="blue" size="1.5rem" onClick={() => handleIconClick('https://twitter.com/Mxtal_fury')}>
                             <BsTwitter />
                         </IconContainer>
-                        <IconContainer color="blue" size="1.5rem">
+                        <IconContainer color="blue" size="1.5rem" onClick={() => handleIconClick('https://www.instagram.com')}>
                             <BsInstagram />
                         </IconContainer>
-                        <IconContainer color="blue" size="1.5rem">
+                        <IconContainer color="blue" size="1.5rem" onClick={() => handleIconClick('https://github.com/JohnOliver1212/JohnOliver1212')}>
                             <BsGithub />
                         </IconContainer>
                     </FlexContainer>
