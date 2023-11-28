@@ -122,6 +122,7 @@ export const Button = styled.a`
     cursor: pointer;
     transition: all 0.3s ease;
     margin-right: 10px; 
+    margin-top: 10px; 
 
     &:hover{
         color: ${({ theme }) => theme.colors.primary_light};
