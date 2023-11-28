@@ -121,6 +121,36 @@ export const Button = styled.a`
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-right: 10px; 
+
+    &:hover{
+        color: ${({ theme }) => theme.colors.primary_light};
+        background-color: ${({ theme }) => theme.colors.white};
+
+    }
+`
+
+export const CustomButton = styled(Button)`
+    display: inline-block;
+    width: max-content;
+    padding: 1rem 2rem;
+    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.primary_light};
+    border: 1px  solid ${({ theme }) => theme.colors.gray};
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: ${({ theme }) => theme.colors.primary_light};
+        background-color: ${({ theme }) => theme.colors.white};
+
+    }
+`
+export const CustomLink = styled.a`
+    color: ${({ theme }) => theme.colors.white};
+    text-decoration: none; 
+    transition: all 0.3s ease;
 
     &:hover{
         color: ${({ theme }) => theme.colors.primary_light};
