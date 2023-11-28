@@ -9,6 +9,8 @@ import {
     ParaText,
     IconContainer,
     Button,
+    CustomButton,
+    CustomLink,
 } from '../../styles/Global.styled';
 
 // project styles
@@ -57,6 +59,11 @@ const Project = ({ data }) => {
                     {data.project_desc}
                 </ParaText>
                 <Button>{data.project_url}</Button>
+                <CustomButton>
+                <CustomLink href="https://oliver-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    Live Preview
+                </CustomLink>
+            </CustomButton>
             </motion.div>
             {/* --right-section-- */}
             <ProjectImageContainer 
